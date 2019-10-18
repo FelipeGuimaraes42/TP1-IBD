@@ -13123,7 +13123,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">io</span>
@@ -13139,7 +13139,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">conn</span><span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;tp1.db&#39;</span><span class="p">)</span>
@@ -13168,7 +13168,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM ORGAO ORDER BY QTD_ORGAOS_SUBORDINADOS DESC&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
@@ -13185,7 +13185,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13311,7 +13311,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT P.NOME_PROGRAMA_GOVERNO, SUM(D.VALOR_DESPESA) AS VALOR_DESPESA &quot;</span> <span class="o">+</span> 
@@ -13334,7 +13334,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13410,7 +13410,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT D.MES_DESPESA, SUM(D.VALOR_DESPESA) AS VALOR_DESPESA &quot;</span> <span class="o">+</span> 
@@ -13435,7 +13435,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13536,7 +13536,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;MES_DESPESA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;VALOR_DESPESA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
@@ -13583,7 +13583,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT cod_funcao, nome_funcao FROM Funcao NATURAL JOIN Detalhamento_Funcao &quot;</span><span class="o">+</span>
@@ -13603,7 +13603,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13667,12 +13667,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT nome_funcao, nome_subfuncao, avg(valor_despesa) AS MEDIA_DESPESAS &quot;</span><span class="o">+</span>
                       <span class="s2">&quot;FROM (Subfuncao NATURAL JOIN Detalhamento_Funcao NATURAL JOIN Funcao) &quot;</span><span class="o">+</span>
-                      <span class="s2">&quot;NATURAL JOIN Despesa_Publica GROUP BY cod_funcao, cod_subfuncao HAVING avg(valor_despesa)&gt;1000&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+                      <span class="s2">&quot;NATURAL JOIN Despesa_Publica GROUP BY nome_funcao, nome_subfuncao HAVING avg(valor_despesa)&gt;1000&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -13686,7 +13686,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13718,26 +13718,26 @@ div#notebook {
     <tr>
       <th>0</th>
       <td>Assistência social</td>
-      <td>Tecnologia da informação</td>
-      <td>2266.087692</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Assistência social</td>
       <td>Assistência comunitária</td>
       <td>1713.411805</td>
     </tr>
     <tr>
+      <th>1</th>
+      <td>Assistência social</td>
+      <td>Tecnologia da informação</td>
+      <td>2266.087692</td>
+    </tr>
+    <tr>
       <th>2</th>
       <td>Educação</td>
-      <td>Ensino profissional</td>
-      <td>1826.135152</td>
+      <td>Educação básica</td>
+      <td>4398.185000</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Educação</td>
-      <td>Educação básica</td>
-      <td>4398.185000</td>
+      <td>Ensino profissional</td>
+      <td>1826.135152</td>
     </tr>
   </tbody>
 </table>
@@ -13760,12 +13760,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT nome_programa_governo, count(cod_orgao) as NUMERO_ORGAOS, valor_despesa &quot;</span><span class="o">+</span>
                       <span class="s2">&quot;FROM Orgao NATURAL JOIN Despesa_Publica NATURAL JOIN Programa_Governo &quot;</span> <span class="o">+</span>
-                      <span class="s2">&quot;WHERE valor_despesa&gt;0 GROUP BY cod_programa_governo&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+                      <span class="s2">&quot;WHERE valor_despesa&gt;0 GROUP BY nome_programa_governo&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -13779,7 +13779,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13810,9 +13810,9 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>REDE CEGONHA</td>
-      <td>1</td>
-      <td>1210.00</td>
+      <td>BRASIL SEM MISERIA</td>
+      <td>6</td>
+      <td>8215.70</td>
     </tr>
     <tr>
       <th>1</th>
@@ -13828,27 +13828,27 @@ div#notebook {
     </tr>
     <tr>
       <th>3</th>
+      <td>MAIS MEDICOS</td>
+      <td>3</td>
+      <td>2400.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
       <td>PRONATEC</td>
       <td>7</td>
       <td>5000.00</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>BRASIL SEM MISERIA</td>
-      <td>6</td>
-      <td>8215.70</td>
-    </tr>
-    <tr>
       <th>5</th>
-      <td>REGULARIZACAO FUNDIARIA</td>
+      <td>REDE CEGONHA</td>
       <td>1</td>
-      <td>1497.26</td>
+      <td>1210.00</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>MAIS MEDICOS</td>
-      <td>3</td>
-      <td>2400.00</td>
+      <td>REGULARIZACAO FUNDIARIA</td>
+      <td>1</td>
+      <td>1497.26</td>
     </tr>
   </tbody>
 </table>
@@ -13871,7 +13871,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT cod_despesa, mes_despesa, ano_despesa, modalidade_despesa, valor_despesa, cod_orgao &quot;</span><span class="o">+</span>
@@ -13891,7 +13891,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[45]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -14494,7 +14494,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT cod_despesa, mes_despesa, ano_despesa, modalidade_despesa, valor_despesa FROM Despesa_Publica &quot;</span><span class="o">+</span>
@@ -14515,7 +14515,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -15056,7 +15056,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT DISTINCT cod_orgao, nome_orgao FROM Orgao NATURAL JOIN Despesa_Publica WHERE cod_programa_governo IN &quot;</span><span class="o">+</span>
@@ -15076,7 +15076,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -15180,7 +15180,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT DISTINCT nome_funcao, valor_despesa &quot;</span><span class="o">+</span>
@@ -15198,7 +15198,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -15432,7 +15432,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT DISTINCT modalidade_despesa, valor_despesa, nome_orgao &quot;</span><span class="o">+</span>
@@ -15451,7 +15451,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -15693,7 +15693,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT DISTINCT valor_despesa, nome_programa_governo &quot;</span><span class="o">+</span>
@@ -15712,7 +15712,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -15776,7 +15776,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT DISTINCT nome_programa_governo, qtd_orgaos_subordinados, valor_despesa &quot;</span><span class="o">+</span>
@@ -15795,7 +15795,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -15993,7 +15993,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
